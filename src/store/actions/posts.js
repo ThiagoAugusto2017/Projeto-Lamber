@@ -1,5 +1,6 @@
 import getInstance from '../../api/index-config';
 import uploadImage from '../../mechanism/imgur';
+import { setMessage } from './message';
 
 import { PostsConst } from './types';
 
@@ -14,6 +15,12 @@ export const addPost = (params, getState) => {
       const instance = getInstance();
       await instance.post('/posts.json', { ...params });
     } catch (err) {
+      dispatch(
+        setMessage({
+          title: 'Erro',
+          text: 'Ocorreu um erro inesperado!',
+        })
+      );
       throw new err();
     }
 

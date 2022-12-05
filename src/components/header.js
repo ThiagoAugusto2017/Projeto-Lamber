@@ -1,22 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Gravatar } from 'react-native-gravatar';
-import {
-  View,
-  Text,
-  ImageBackground,
-  FlatList,
-  TouchableOpacity,
-  Platform,
-  Alert,
-  Image,
-} from 'react-native';
+import { View, Text, Image } from 'react-native';
 import icon from '../../assets/imgs/icon.png';
 import styles from './style/header-style';
-
-const privateModule = {};
-
-const initialState = {};
 
 class Header extends Component {
   render() {

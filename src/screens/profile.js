@@ -3,16 +3,9 @@ import { TouchableOpacity } from 'react-native';
 import { logout } from '../store/actions/user';
 import { connect } from 'react-redux';
 
-import {
-  View,
-  Text,
-  Alert,
-  TouchableWithoutFeedback as TWF,
-  TextInput,
-  FlatList,
-} from 'react-native';
+import { View, Text } from 'react-native';
 import { Gravatar } from 'react-native-gravatar';
-import Icon from 'react-native-vector-icons/FontAwesome';
+
 import styles from './styles/profile-styles';
 
 class Profile extends React.Component {

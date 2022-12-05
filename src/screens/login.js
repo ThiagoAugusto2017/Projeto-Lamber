@@ -2,16 +2,8 @@ import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import { login } from '../store/actions/user';
-import {
-  View,
-  Text,
-  Alert,
-  TouchableWithoutFeedback as TWF,
-  TextInput,
-  FlatList,
-} from 'react-native';
-import { Gravatar } from 'react-native-gravatar';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { View, Text, TextInput } from 'react-native';
+
 import styles from './styles/login-styles';
 
 class Login extends React.Component {
@@ -23,7 +15,7 @@ class Login extends React.Component {
 
   componentDidUpdate = (prevProps) => {
     if (prevProps.isLoading && !this.props.isLoading) {
-      this.props.navigation.navigate('Feed');
+      this.props.navigation.navigate('Profile');
     }
   };
 

@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Alert,
   View,
-  StyleSheet,
   ScrollView,
   Image,
   Text,
   TextInput,
-  Dimensions,
   TouchableOpacity,
 } from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import styles from './styles/addPhoto-styles';
 import { connect } from 'react-redux';

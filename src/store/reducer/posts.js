@@ -33,16 +33,6 @@ const postsReducer = (state = initialState, { payload, type }) => {
       response = {
         ...state,
         posts: payload,
-        // posts: state.posts.map((post) => {
-        //   if (post.id === payload.id) {
-        //     if (post.comments) {
-        //       post.comments = post.comments.concat(payload.comments);
-        //     } else {
-        //       post.comments = [payload.comments];
-        //     }
-        //   }
-        //   return post;
-        // }),
       };
 
       break;

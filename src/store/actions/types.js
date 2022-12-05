@@ -12,3 +12,7 @@ export const PostsConst = {
   POST_CREATED: 'POST_CREATED',
   CREATING_POST: 'CREATING_POST',
 };
+
+export const MessageConst = {
+  SET_MESSAGE: 'SET_MESSAGE',
+};

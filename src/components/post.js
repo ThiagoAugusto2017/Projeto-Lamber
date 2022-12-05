@@ -25,10 +25,10 @@ class Post extends React.Component {
     name: this.props.user.name,
   };
   render() {
-    const isLogged =
-      this.state.email && this.state.name ? (
-        <AddComments id={this.props.id} />
-      ) : null;
+    const isLogged = this.state.name ? (
+      <AddComments id={this.props.id} />
+    ) : null;
+
     return (
       <View style={styles.container}>
         <Image source={{ uri: this.props.image }} style={styles.image}></Image>
